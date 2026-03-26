@@ -2,27 +2,32 @@
   <style>
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-    @keyframes float1 { 0%, 100% { transform: translateY(0); opacity: 0.2; } 50% { transform: translateY(-12px); opacity: 0.8; } }
-    @keyframes float2 { 0%, 100% { transform: translateY(0); opacity: 0.15; } 50% { transform: translateY(-14px); opacity: 0.7; } }
-    @keyframes float3 { 0%, 100% { transform: translateY(0); opacity: 0.25; } 50% { transform: translateY(-16px); opacity: 0.85; } }
-    @keyframes float4 { 0%, 100% { transform: translateY(0); opacity: 0.18; } 50% { transform: translateY(-10px); opacity: 0.6; } }
-    @keyframes drawLine { from { width: 0; } to { width: 240px; } }
-    
-    .bg-grid line { stroke: #1a1a1a; stroke-width: 0.5; }
-    
-    /* Floating dots */
-    .dot1 { animation: float1 4s ease-in-out infinite; }
-    .dot2 { animation: float2 5s ease-in-out infinite; }
-    .dot3 { animation: float3 3.5s ease-in-out infinite; }
-    .dot4 { animation: float4 4.5s ease-in-out infinite; }
-    .dot5 { animation: float1 5.5s ease-in-out infinite; }
-    .dot6 { animation: float3 3.8s ease-in-out infinite; }
-    .dot7 { animation: float2 4.2s ease-in-out infinite; }
-    .dot8 { animation: float4 3.2s ease-in-out infinite; }
-    .dot9 { animation: float1 6s ease-in-out infinite; }
-    .dot10 { animation: float2 4.8s ease-in-out infinite; }
 
-    /* Letter-by-letter typing via CSS delays */
+    @keyframes float1 { 0%, 100% { transform: translateY(0); opacity: 0.3; } 50% { transform: translateY(-12px); opacity: 1; } }
+    @keyframes float2 { 0%, 100% { transform: translateY(0); opacity: 0.2; } 50% { transform: translateY(-14px); opacity: 0.9; } }
+    @keyframes float3 { 0%, 100% { transform: translateY(0); opacity: 0.35; } 50% { transform: translateY(-16px); opacity: 1; } }
+    @keyframes float4 { 0%, 100% { transform: translateY(0); opacity: 0.25; } 50% { transform: translateY(-10px); opacity: 0.85; } }
+
+    @keyframes pulse1 { 0%, 100% { r: 2.5; opacity: 0.3; } 50% { r: 4; opacity: 1; } }
+    @keyframes pulse2 { 0%, 100% { r: 2; opacity: 0.2; } 50% { r: 3.5; opacity: 0.9; } }
+    @keyframes pulse3 { 0%, 100% { r: 3; opacity: 0.35; } 50% { r: 5; opacity: 1; } }
+
+    .dot1 { animation: float1 4s ease-in-out infinite, pulse1 4s ease-in-out infinite; }
+    .dot2 { animation: float2 5s ease-in-out infinite, pulse2 5s ease-in-out infinite; }
+    .dot3 { animation: float3 3.5s ease-in-out infinite, pulse3 3.5s ease-in-out infinite; }
+    .dot4 { animation: float4 4.5s ease-in-out infinite, pulse1 4.5s ease-in-out infinite; }
+    .dot5 { animation: float1 5.5s ease-in-out infinite, pulse2 5.5s ease-in-out infinite; }
+    .dot6 { animation: float3 3.8s ease-in-out infinite, pulse3 3.8s ease-in-out infinite; }
+    .dot7 { animation: float2 4.2s ease-in-out infinite, pulse1 4.2s ease-in-out infinite; }
+    .dot8 { animation: float4 3.2s ease-in-out infinite, pulse2 3.2s ease-in-out infinite; }
+    .dot9 { animation: float1 6s ease-in-out infinite, pulse3 6s ease-in-out infinite; }
+    .dot10 { animation: float2 4.8s ease-in-out infinite, pulse1 4.8s ease-in-out infinite; }
+    .dot11 { animation: float3 3.6s ease-in-out infinite, pulse2 3.6s ease-in-out infinite; }
+    .dot12 { animation: float4 5.2s ease-in-out infinite, pulse3 5.2s ease-in-out infinite; }
+    .dot13 { animation: float1 4.4s ease-in-out infinite, pulse1 4.4s ease-in-out infinite; }
+    .dot14 { animation: float2 3.9s ease-in-out infinite, pulse2 3.9s ease-in-out infinite; }
+
+    /* Letter-by-letter typing */
     .line1 .char { opacity: 0; animation: fadeIn 0.01s forwards; }
     .line1 .char:nth-child(1)  { animation-delay: 0.3s; }
     .line1 .char:nth-child(2)  { animation-delay: 0.4s; }
@@ -48,10 +53,8 @@
     .line1 .char:nth-child(22) { animation-delay: 2.7s; }
     .line1 .char:nth-child(23) { animation-delay: 2.8s; }
 
-    /* Tagline fade */
     .tagline { opacity: 0; animation: fadeIn 0.8s forwards; animation-delay: 3.4s; }
 
-    /* Line 3 typing */
     .line3 { opacity: 0; animation: fadeIn 0.01s forwards; animation-delay: 4.2s; }
     .line3 .char { opacity: 0; animation: fadeIn 0.01s forwards; }
     .line3 .char:nth-child(1)  { animation-delay: 4.3s; }
@@ -87,7 +90,6 @@
     .line3 .char:nth-child(31) { animation-delay: 6.4s; }
     .line3 .char:nth-child(32) { animation-delay: 6.47s; }
 
-    /* Line 4 typing */
     .line4 { opacity: 0; animation: fadeIn 0.01s forwards; animation-delay: 7.0s; }
     .line4 .char { opacity: 0; animation: fadeIn 0.01s forwards; }
     .line4 .char:nth-child(1)  { animation-delay: 7.1s; }
@@ -120,11 +122,7 @@
     .line4 .char:nth-child(28) { animation-delay: 8.72s; }
     .line4 .char:nth-child(29) { animation-delay: 8.78s; }
 
-    /* Cursor blink */
-    .cursor { animation: blink 0.8s step-end infinite; }
     .cursor-final { opacity: 0; animation: blink 0.8s step-end infinite; animation-delay: 8.8s; }
-
-    /* Bottom line draw */
     .accent-line { opacity: 0; animation: fadeIn 0.5s forwards; animation-delay: 9.2s; }
   </style>
 
@@ -139,23 +137,28 @@
   </defs>
   <rect width="900" height="320" rx="12" fill="url(#grid)" opacity="0.4"/>
 
-  <!-- Floating dots -->
-  <circle class="dot1" cx="70" cy="55" r="2.5" fill="#fff"/>
-  <circle class="dot2" cx="180" cy="260" r="2" fill="#fff"/>
-  <circle class="dot3" cx="780" cy="70" r="3" fill="#fff"/>
-  <circle class="dot4" cx="670" cy="270" r="2.2" fill="#fff"/>
-  <circle class="dot5" cx="420" cy="40" r="1.8" fill="#fff"/>
-  <circle class="dot6" cx="860" cy="190" r="2.5" fill="#fff"/>
-  <circle class="dot7" cx="50" cy="180" r="1.8" fill="#fff"/>
-  <circle class="dot8" cx="530" cy="290" r="2.2" fill="#fff"/>
-  <circle class="dot9" cx="320" cy="290" r="1.5" fill="#fff"/>
-  <circle class="dot10" cx="830" cy="40" r="1.6" fill="#fff"/>
+  <!-- Colorful floating + pulsing dots -->
+  <circle class="dot1" cx="70" cy="55" r="2.5" fill="#4FC3F7"/>
+  <circle class="dot2" cx="180" cy="260" r="2" fill="#81C784"/>
+  <circle class="dot3" cx="780" cy="70" r="3" fill="#E57373"/>
+  <circle class="dot4" cx="670" cy="270" r="2.2" fill="#FFD54F"/>
+  <circle class="dot5" cx="420" cy="40" r="1.8" fill="#BA68C8"/>
+  <circle class="dot6" cx="860" cy="190" r="2.5" fill="#4FC3F7"/>
+  <circle class="dot7" cx="50" cy="180" r="1.8" fill="#FF8A65"/>
+  <circle class="dot8" cx="530" cy="290" r="2.2" fill="#81C784"/>
+  <circle class="dot9" cx="320" cy="290" r="1.5" fill="#E57373"/>
+  <circle class="dot10" cx="830" cy="40" r="1.6" fill="#BA68C8"/>
+  <circle class="dot11" cx="150" cy="130" r="2" fill="#FFD54F"/>
+  <circle class="dot12" cx="750" cy="180" r="1.8" fill="#4FC3F7"/>
+  <circle class="dot13" cx="600" cy="50" r="2.3" fill="#81C784"/>
+  <circle class="dot14" cx="280" cy="200" r="1.6" fill="#FF8A65"/>
 
-  <!-- Faint lines -->
-  <line x1="70" y1="55" x2="180" y2="260" stroke="#fff" stroke-width="0.3" opacity="0.06"/>
-  <line x1="420" y1="40" x2="780" y2="70" stroke="#fff" stroke-width="0.3" opacity="0.06"/>
-  <line x1="670" y1="270" x2="860" y2="190" stroke="#fff" stroke-width="0.3" opacity="0.06"/>
-  <line x1="50" y1="180" x2="320" y2="290" stroke="#fff" stroke-width="0.3" opacity="0.06"/>
+  <!-- Faint connecting lines -->
+  <line x1="70" y1="55" x2="150" y2="130" stroke="#4FC3F7" stroke-width="0.3" opacity="0.08"/>
+  <line x1="420" y1="40" x2="600" y2="50" stroke="#81C784" stroke-width="0.3" opacity="0.08"/>
+  <line x1="670" y1="270" x2="860" y2="190" stroke="#FFD54F" stroke-width="0.3" opacity="0.08"/>
+  <line x1="50" y1="180" x2="280" y2="200" stroke="#FF8A65" stroke-width="0.3" opacity="0.08"/>
+  <line x1="780" y1="70" x2="830" y2="40" stroke="#E57373" stroke-width="0.3" opacity="0.08"/>
 
   <!-- LINE 1: "Hi, this is Charu Sneha" -->
   <text class="line1" x="450" y="100" text-anchor="middle" fill="#fff" font-family="'Courier New',monospace" font-size="42" font-weight="bold">
@@ -167,12 +170,12 @@
     building useful systems out of rough ideas
   </text>
 
-  <!-- LINE 3: "> agent mode: build, test, improve" -->
+  <!-- LINE 3 -->
   <text class="line3" x="310" y="205" fill="#ccc" font-family="'Courier New',monospace" font-size="16">
     <tspan fill="#555">&gt; </tspan><tspan class="char">a</tspan><tspan class="char">g</tspan><tspan class="char">e</tspan><tspan class="char">n</tspan><tspan class="char">t</tspan><tspan class="char">&#160;</tspan><tspan class="char">m</tspan><tspan class="char">o</tspan><tspan class="char">d</tspan><tspan class="char">e</tspan><tspan class="char">:</tspan><tspan class="char">&#160;</tspan><tspan class="char">b</tspan><tspan class="char">u</tspan><tspan class="char">i</tspan><tspan class="char">l</tspan><tspan class="char">d</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">t</tspan><tspan class="char">e</tspan><tspan class="char">s</tspan><tspan class="char">t</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">i</tspan><tspan class="char">m</tspan><tspan class="char">p</tspan><tspan class="char">r</tspan><tspan class="char">o</tspan><tspan class="char">v</tspan><tspan class="char">e</tspan>
   </text>
 
-  <!-- LINE 4: "> status: currently brewing..." -->
+  <!-- LINE 4 -->
   <text class="line4" x="310" y="240" fill="#555" font-family="'Courier New',monospace" font-size="14">
     <tspan fill="#333">&gt; </tspan><tspan class="char">s</tspan><tspan class="char">t</tspan><tspan class="char">a</tspan><tspan class="char">t</tspan><tspan class="char">u</tspan><tspan class="char">s</tspan><tspan class="char">:</tspan><tspan class="char">&#160;</tspan><tspan class="char">c</tspan><tspan class="char">u</tspan><tspan class="char">r</tspan><tspan class="char">r</tspan><tspan class="char">e</tspan><tspan class="char">n</tspan><tspan class="char">t</tspan><tspan class="char">l</tspan><tspan class="char">y</tspan><tspan class="char">&#160;</tspan><tspan class="char">b</tspan><tspan class="char">r</tspan><tspan class="char">e</tspan><tspan class="char">w</tspan><tspan class="char">i</tspan><tspan class="char">n</tspan><tspan class="char">g</tspan><tspan class="char">.</tspan><tspan class="char">.</tspan><tspan class="char">.</tspan><tspan class="char">&#160;</tspan>
   </text>
