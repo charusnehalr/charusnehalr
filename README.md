@@ -85,7 +85,7 @@ Active in open-source contributions and hackathons
 
 ### 🤝 Let's build something
 
-<p>If you're hiring, collaborating, or have a problem worth solving - <a href="mailto:charusneha266@gmail.com"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="20" height="20" alt="Gmail"/></a>&#160;<a href="https://discord.com/users/chals_0062"><img src="https://cdn.simpleicons.org/discord/5865F2" width="20" height="20" alt="Discord"/></a>&#160;<a href="https://linkedin.com/in/charusneha"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" alt="LinkedIn"/></a></p>
+<p>If you're hiring, collaborating, or have a problem worth solving - <a href="mailto:charusneha266@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="20" height="20" alt="Gmail"/></a>&#160;<a href="https://discord.com/users/chals_0062"><img src="https://cdn.simpleicons.org/discord/5865F2" width="20" height="20" alt="Discord"/></a>&#160;<a href="https://linkedin.com/in/charusneha"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" alt="LinkedIn"/></a></p>
 
 ---
 
