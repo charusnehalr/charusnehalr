@@ -1,0 +1,185 @@
+<svg width="900" height="320" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes float1 { 0%, 100% { transform: translateY(0); opacity: 0.2; } 50% { transform: translateY(-12px); opacity: 0.8; } }
+    @keyframes float2 { 0%, 100% { transform: translateY(0); opacity: 0.15; } 50% { transform: translateY(-14px); opacity: 0.7; } }
+    @keyframes float3 { 0%, 100% { transform: translateY(0); opacity: 0.25; } 50% { transform: translateY(-16px); opacity: 0.85; } }
+    @keyframes float4 { 0%, 100% { transform: translateY(0); opacity: 0.18; } 50% { transform: translateY(-10px); opacity: 0.6; } }
+    @keyframes drawLine { from { width: 0; } to { width: 240px; } }
+    
+    .bg-grid line { stroke: #1a1a1a; stroke-width: 0.5; }
+    
+    /* Floating dots */
+    .dot1 { animation: float1 4s ease-in-out infinite; }
+    .dot2 { animation: float2 5s ease-in-out infinite; }
+    .dot3 { animation: float3 3.5s ease-in-out infinite; }
+    .dot4 { animation: float4 4.5s ease-in-out infinite; }
+    .dot5 { animation: float1 5.5s ease-in-out infinite; }
+    .dot6 { animation: float3 3.8s ease-in-out infinite; }
+    .dot7 { animation: float2 4.2s ease-in-out infinite; }
+    .dot8 { animation: float4 3.2s ease-in-out infinite; }
+    .dot9 { animation: float1 6s ease-in-out infinite; }
+    .dot10 { animation: float2 4.8s ease-in-out infinite; }
+
+    /* Letter-by-letter typing via CSS delays */
+    .line1 .char { opacity: 0; animation: fadeIn 0.01s forwards; }
+    .line1 .char:nth-child(1)  { animation-delay: 0.3s; }
+    .line1 .char:nth-child(2)  { animation-delay: 0.4s; }
+    .line1 .char:nth-child(3)  { animation-delay: 0.5s; }
+    .line1 .char:nth-child(4)  { animation-delay: 0.65s; }
+    .line1 .char:nth-child(5)  { animation-delay: 0.75s; }
+    .line1 .char:nth-child(6)  { animation-delay: 0.85s; }
+    .line1 .char:nth-child(7)  { animation-delay: 0.95s; }
+    .line1 .char:nth-child(8)  { animation-delay: 1.05s; }
+    .line1 .char:nth-child(9)  { animation-delay: 1.2s; }
+    .line1 .char:nth-child(10) { animation-delay: 1.3s; }
+    .line1 .char:nth-child(11) { animation-delay: 1.4s; }
+    .line1 .char:nth-child(12) { animation-delay: 1.55s; }
+    .line1 .char:nth-child(13) { animation-delay: 1.7s; }
+    .line1 .char:nth-child(14) { animation-delay: 1.8s; }
+    .line1 .char:nth-child(15) { animation-delay: 1.9s; }
+    .line1 .char:nth-child(16) { animation-delay: 2.0s; }
+    .line1 .char:nth-child(17) { animation-delay: 2.1s; }
+    .line1 .char:nth-child(18) { animation-delay: 2.25s; }
+    .line1 .char:nth-child(19) { animation-delay: 2.4s; }
+    .line1 .char:nth-child(20) { animation-delay: 2.5s; }
+    .line1 .char:nth-child(21) { animation-delay: 2.6s; }
+    .line1 .char:nth-child(22) { animation-delay: 2.7s; }
+    .line1 .char:nth-child(23) { animation-delay: 2.8s; }
+
+    /* Tagline fade */
+    .tagline { opacity: 0; animation: fadeIn 0.8s forwards; animation-delay: 3.4s; }
+
+    /* Line 3 typing */
+    .line3 { opacity: 0; animation: fadeIn 0.01s forwards; animation-delay: 4.2s; }
+    .line3 .char { opacity: 0; animation: fadeIn 0.01s forwards; }
+    .line3 .char:nth-child(1)  { animation-delay: 4.3s; }
+    .line3 .char:nth-child(2)  { animation-delay: 4.37s; }
+    .line3 .char:nth-child(3)  { animation-delay: 4.44s; }
+    .line3 .char:nth-child(4)  { animation-delay: 4.51s; }
+    .line3 .char:nth-child(5)  { animation-delay: 4.58s; }
+    .line3 .char:nth-child(6)  { animation-delay: 4.65s; }
+    .line3 .char:nth-child(7)  { animation-delay: 4.72s; }
+    .line3 .char:nth-child(8)  { animation-delay: 4.79s; }
+    .line3 .char:nth-child(9)  { animation-delay: 4.86s; }
+    .line3 .char:nth-child(10) { animation-delay: 4.93s; }
+    .line3 .char:nth-child(11) { animation-delay: 5.0s; }
+    .line3 .char:nth-child(12) { animation-delay: 5.07s; }
+    .line3 .char:nth-child(13) { animation-delay: 5.14s; }
+    .line3 .char:nth-child(14) { animation-delay: 5.21s; }
+    .line3 .char:nth-child(15) { animation-delay: 5.28s; }
+    .line3 .char:nth-child(16) { animation-delay: 5.35s; }
+    .line3 .char:nth-child(17) { animation-delay: 5.42s; }
+    .line3 .char:nth-child(18) { animation-delay: 5.49s; }
+    .line3 .char:nth-child(19) { animation-delay: 5.56s; }
+    .line3 .char:nth-child(20) { animation-delay: 5.63s; }
+    .line3 .char:nth-child(21) { animation-delay: 5.7s; }
+    .line3 .char:nth-child(22) { animation-delay: 5.77s; }
+    .line3 .char:nth-child(23) { animation-delay: 5.84s; }
+    .line3 .char:nth-child(24) { animation-delay: 5.91s; }
+    .line3 .char:nth-child(25) { animation-delay: 5.98s; }
+    .line3 .char:nth-child(26) { animation-delay: 6.05s; }
+    .line3 .char:nth-child(27) { animation-delay: 6.12s; }
+    .line3 .char:nth-child(28) { animation-delay: 6.19s; }
+    .line3 .char:nth-child(29) { animation-delay: 6.26s; }
+    .line3 .char:nth-child(30) { animation-delay: 6.33s; }
+    .line3 .char:nth-child(31) { animation-delay: 6.4s; }
+    .line3 .char:nth-child(32) { animation-delay: 6.47s; }
+
+    /* Line 4 typing */
+    .line4 { opacity: 0; animation: fadeIn 0.01s forwards; animation-delay: 7.0s; }
+    .line4 .char { opacity: 0; animation: fadeIn 0.01s forwards; }
+    .line4 .char:nth-child(1)  { animation-delay: 7.1s; }
+    .line4 .char:nth-child(2)  { animation-delay: 7.16s; }
+    .line4 .char:nth-child(3)  { animation-delay: 7.22s; }
+    .line4 .char:nth-child(4)  { animation-delay: 7.28s; }
+    .line4 .char:nth-child(5)  { animation-delay: 7.34s; }
+    .line4 .char:nth-child(6)  { animation-delay: 7.4s; }
+    .line4 .char:nth-child(7)  { animation-delay: 7.46s; }
+    .line4 .char:nth-child(8)  { animation-delay: 7.52s; }
+    .line4 .char:nth-child(9)  { animation-delay: 7.58s; }
+    .line4 .char:nth-child(10) { animation-delay: 7.64s; }
+    .line4 .char:nth-child(11) { animation-delay: 7.7s; }
+    .line4 .char:nth-child(12) { animation-delay: 7.76s; }
+    .line4 .char:nth-child(13) { animation-delay: 7.82s; }
+    .line4 .char:nth-child(14) { animation-delay: 7.88s; }
+    .line4 .char:nth-child(15) { animation-delay: 7.94s; }
+    .line4 .char:nth-child(16) { animation-delay: 8.0s; }
+    .line4 .char:nth-child(17) { animation-delay: 8.06s; }
+    .line4 .char:nth-child(18) { animation-delay: 8.12s; }
+    .line4 .char:nth-child(19) { animation-delay: 8.18s; }
+    .line4 .char:nth-child(20) { animation-delay: 8.24s; }
+    .line4 .char:nth-child(21) { animation-delay: 8.3s; }
+    .line4 .char:nth-child(22) { animation-delay: 8.36s; }
+    .line4 .char:nth-child(23) { animation-delay: 8.42s; }
+    .line4 .char:nth-child(24) { animation-delay: 8.48s; }
+    .line4 .char:nth-child(25) { animation-delay: 8.54s; }
+    .line4 .char:nth-child(26) { animation-delay: 8.6s; }
+    .line4 .char:nth-child(27) { animation-delay: 8.66s; }
+    .line4 .char:nth-child(28) { animation-delay: 8.72s; }
+    .line4 .char:nth-child(29) { animation-delay: 8.78s; }
+
+    /* Cursor blink */
+    .cursor { animation: blink 0.8s step-end infinite; }
+    .cursor-final { opacity: 0; animation: blink 0.8s step-end infinite; animation-delay: 8.8s; }
+
+    /* Bottom line draw */
+    .accent-line { opacity: 0; animation: fadeIn 0.5s forwards; animation-delay: 9.2s; }
+  </style>
+
+  <!-- Background -->
+  <rect width="900" height="320" rx="12" fill="#0d0d0d"/>
+  
+  <!-- Grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="320" rx="12" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- Floating dots -->
+  <circle class="dot1" cx="70" cy="55" r="2.5" fill="#fff"/>
+  <circle class="dot2" cx="180" cy="260" r="2" fill="#fff"/>
+  <circle class="dot3" cx="780" cy="70" r="3" fill="#fff"/>
+  <circle class="dot4" cx="670" cy="270" r="2.2" fill="#fff"/>
+  <circle class="dot5" cx="420" cy="40" r="1.8" fill="#fff"/>
+  <circle class="dot6" cx="860" cy="190" r="2.5" fill="#fff"/>
+  <circle class="dot7" cx="50" cy="180" r="1.8" fill="#fff"/>
+  <circle class="dot8" cx="530" cy="290" r="2.2" fill="#fff"/>
+  <circle class="dot9" cx="320" cy="290" r="1.5" fill="#fff"/>
+  <circle class="dot10" cx="830" cy="40" r="1.6" fill="#fff"/>
+
+  <!-- Faint lines -->
+  <line x1="70" y1="55" x2="180" y2="260" stroke="#fff" stroke-width="0.3" opacity="0.06"/>
+  <line x1="420" y1="40" x2="780" y2="70" stroke="#fff" stroke-width="0.3" opacity="0.06"/>
+  <line x1="670" y1="270" x2="860" y2="190" stroke="#fff" stroke-width="0.3" opacity="0.06"/>
+  <line x1="50" y1="180" x2="320" y2="290" stroke="#fff" stroke-width="0.3" opacity="0.06"/>
+
+  <!-- LINE 1: "Hi, this is Charu Sneha" -->
+  <text class="line1" x="450" y="100" text-anchor="middle" fill="#fff" font-family="'Courier New',monospace" font-size="42" font-weight="bold">
+    <tspan class="char">H</tspan><tspan class="char">i</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">t</tspan><tspan class="char">h</tspan><tspan class="char">i</tspan><tspan class="char">s</tspan><tspan class="char">&#160;</tspan><tspan class="char">i</tspan><tspan class="char">s</tspan><tspan class="char">&#160;</tspan><tspan class="char">C</tspan><tspan class="char">h</tspan><tspan class="char">a</tspan><tspan class="char">r</tspan><tspan class="char">u</tspan><tspan class="char">&#160;</tspan><tspan class="char">S</tspan><tspan class="char">n</tspan><tspan class="char">e</tspan><tspan class="char">h</tspan><tspan class="char">a</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text class="tagline" x="450" y="148" text-anchor="middle" fill="#888" font-family="'Courier New',monospace" font-size="15" letter-spacing="1.5">
+    building useful systems out of rough ideas
+  </text>
+
+  <!-- LINE 3: "> agent mode: build, test, improve" -->
+  <text class="line3" x="310" y="205" fill="#ccc" font-family="'Courier New',monospace" font-size="16">
+    <tspan fill="#555">&gt; </tspan><tspan class="char">a</tspan><tspan class="char">g</tspan><tspan class="char">e</tspan><tspan class="char">n</tspan><tspan class="char">t</tspan><tspan class="char">&#160;</tspan><tspan class="char">m</tspan><tspan class="char">o</tspan><tspan class="char">d</tspan><tspan class="char">e</tspan><tspan class="char">:</tspan><tspan class="char">&#160;</tspan><tspan class="char">b</tspan><tspan class="char">u</tspan><tspan class="char">i</tspan><tspan class="char">l</tspan><tspan class="char">d</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">t</tspan><tspan class="char">e</tspan><tspan class="char">s</tspan><tspan class="char">t</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">i</tspan><tspan class="char">m</tspan><tspan class="char">p</tspan><tspan class="char">r</tspan><tspan class="char">o</tspan><tspan class="char">v</tspan><tspan class="char">e</tspan>
+  </text>
+
+  <!-- LINE 4: "> status: currently brewing..." -->
+  <text class="line4" x="310" y="240" fill="#555" font-family="'Courier New',monospace" font-size="14">
+    <tspan fill="#333">&gt; </tspan><tspan class="char">s</tspan><tspan class="char">t</tspan><tspan class="char">a</tspan><tspan class="char">t</tspan><tspan class="char">u</tspan><tspan class="char">s</tspan><tspan class="char">:</tspan><tspan class="char">&#160;</tspan><tspan class="char">c</tspan><tspan class="char">u</tspan><tspan class="char">r</tspan><tspan class="char">r</tspan><tspan class="char">e</tspan><tspan class="char">n</tspan><tspan class="char">t</tspan><tspan class="char">l</tspan><tspan class="char">y</tspan><tspan class="char">&#160;</tspan><tspan class="char">b</tspan><tspan class="char">r</tspan><tspan class="char">e</tspan><tspan class="char">w</tspan><tspan class="char">i</tspan><tspan class="char">n</tspan><tspan class="char">g</tspan><tspan class="char">.</tspan><tspan class="char">.</tspan><tspan class="char">.</tspan><tspan class="char">&#160;</tspan>
+  </text>
+
+  <!-- Final blinking cursor -->
+  <rect class="cursor-final" x="580" y="228" width="2" height="16" fill="#555"/>
+
+  <!-- Bottom accent line -->
+  <rect class="accent-line" x="330" y="275" width="240" height="1.5" fill="#fff" opacity="0.25"/>
+</svg>
