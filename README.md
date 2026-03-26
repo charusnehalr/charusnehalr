@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/agent-banner.svg" alt="Charu Sneha" width="900"/>
+  <img src="./charusnehalr/agent-banner.svg" alt="Charu Sneha" width="900"/>
 </p>
 ## ☕ currently brewing...
 
