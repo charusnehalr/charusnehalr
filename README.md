@@ -8,20 +8,20 @@ Not here to just write code. Here to ship systems that solve real problems.
 
 ---
 
-### ⚡ what I build
+### ⚡ What I build
 
-- **Search & retrieval** — semantic search, hybrid retrieval, ranking pipelines that understand intent, not just keywords
-- **NLP systems** — RAG pipelines, contradiction detection, document understanding. The kind of stuff where "it works on the demo" isn't good enough
-- **Full-stack applications** — backend logic to frontend experience. APIs, data pipelines, and the UI that makes it all usable
-- **Systems that connect things** — data to decisions, users to answers, messy inputs to structured outputs
+- **Search & retrieval**- semantic search, hybrid retrieval, ranking pipelines that understand intent, not just keywords
+- **NLP systems**- RAG pipelines, contradiction detection, document understanding. The kind of stuff where "it works on the demo" isn't good enough
+- **Full-stack applications**- backend logic to frontend experience. APIs, data pipelines, and the UI that makes it all usable
+- **Systems that connect things**- data to decisions, users to answers, messy inputs to structured outputs
 
-> from "this would be cool" → to "this actually works"
+Basically from "this would be cool" → to "this actually works"
 
 ---
 
-### 🛠 how I work
+### 🛠 How I work
 
-Ship fast, refine relentlessly. First drafts are messy — final systems aren't.
+Ship fast, refine relentlessly. First drafts are messy - final systems aren't.
 
 I care about the gap between *"technically possible"* and *"actually usable."* Most of my work lives there.
 
@@ -29,7 +29,7 @@ Active in open-source contributions and hackathons
 
 ---
 
-### 🧰 tools & technologies
+### 🧰 Some Tools & technologies
 
 **languages**
 <p>
@@ -55,7 +55,7 @@ Active in open-source contributions and hackathons
   <img src="https://img.shields.io/badge/vLLM-000000?style=flat-square&logoColor=white" height="28" alt="vLLM"/>
 </p>
 
-**frameworks & infra**
+**Frameworks & infra**
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="36" height="36" alt="FastAPI"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="36" height="36" alt="Next.js"/>
@@ -83,9 +83,9 @@ Active in open-source contributions and hackathons
 
 ---
 
-### 🤝 let's build something
+### 🤝 Let's build something
 
-If you're hiring, collaborating, or have a problem worth solving - [Mail](mailto:charusneha266@gmail.com).
+<p>If you're hiring, collaborating, or have a problem worth solving - <a href="mailto:charusneha266@gmail.com"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="20" height="20" alt="Gmail"/></a>&#160;<a href="https://discord.com/users/chals_0062"><img src="https://cdn.simpleicons.org/discord/5865F2" width="20" height="20" alt="Discord"/></a>&#160;<a href="https://linkedin.com/in/charusneha"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" alt="LinkedIn"/></a></p>
 
 ---
 
