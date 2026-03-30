@@ -27,6 +27,33 @@
     .dot13 { animation: float1 4.4s ease-in-out infinite, pulse1 4.4s ease-in-out infinite; }
     .dot14 { animation: float2 3.9s ease-in-out infinite, pulse2 3.9s ease-in-out infinite; }
 
+    /* ===== LIGHT MODE (default) ===== */
+    .bg-fill { fill: #f6f6f6; }
+    .grid-line { stroke: #e0e0e0; }
+    .title-text { fill: #111111; }
+    .tagline-text { fill: #666666; }
+    .line3-text { fill: #333333; }
+    .line3-prompt { fill: #aaaaaa; }
+    .line4-text { fill: #888888; }
+    .line4-prompt { fill: #bbbbbb; }
+    .cursor-fill { fill: #888888; }
+    .accent-fill { fill: #111111; }
+    .connect-line { stroke: currentColor; opacity: 0.06; }
+
+    /* ===== DARK MODE ===== */
+    @media (prefers-color-scheme: dark) {
+      .bg-fill { fill: #0d1117; }
+      .grid-line { stroke: #1a1a1a; }
+      .title-text { fill: #ffffff; }
+      .tagline-text { fill: #888888; }
+      .line3-text { fill: #cccccc; }
+      .line3-prompt { fill: #555555; }
+      .line4-text { fill: #555555; }
+      .line4-prompt { fill: #333333; }
+      .cursor-fill { fill: #555555; }
+      .accent-fill { fill: #ffffff; }
+    }
+
     /* Letter-by-letter typing */
     .line1 .char { opacity: 0; animation: fadeIn 0.01s forwards; }
     .line1 .char:nth-child(1)  { animation-delay: 0.3s; }
@@ -127,12 +154,12 @@
   </style>
 
   <!-- Background -->
-  <rect width="900" height="320" rx="12" fill="#0d0d0d"/>
+  <rect class="bg-fill" width="900" height="320" rx="12"/>
   
   <!-- Grid -->
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" class="grid-line" stroke-width="0.5"/>
     </pattern>
   </defs>
   <rect width="900" height="320" rx="12" fill="url(#grid)" opacity="0.4"/>
@@ -161,28 +188,28 @@
   <line x1="780" y1="70" x2="830" y2="40" stroke="#E57373" stroke-width="0.3" opacity="0.08"/>
 
   <!-- LINE 1: "Hi, this is Charu Sneha" -->
-  <text class="line1" x="450" y="100" text-anchor="middle" fill="#fff" font-family="'Courier New',monospace" font-size="42" font-weight="bold">
+  <text class="line1 title-text" x="450" y="100" text-anchor="middle" font-family="'Courier New',monospace" font-size="42" font-weight="bold">
     <tspan class="char">H</tspan><tspan class="char">i</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">t</tspan><tspan class="char">h</tspan><tspan class="char">i</tspan><tspan class="char">s</tspan><tspan class="char">&#160;</tspan><tspan class="char">i</tspan><tspan class="char">s</tspan><tspan class="char">&#160;</tspan><tspan class="char">C</tspan><tspan class="char">h</tspan><tspan class="char">a</tspan><tspan class="char">r</tspan><tspan class="char">u</tspan><tspan class="char">&#160;</tspan><tspan class="char">S</tspan><tspan class="char">n</tspan><tspan class="char">e</tspan><tspan class="char">h</tspan><tspan class="char">a</tspan>
   </text>
 
   <!-- Tagline -->
-  <text class="tagline" x="450" y="148" text-anchor="middle" fill="#888" font-family="'Courier New',monospace" font-size="15" letter-spacing="1.5">
+  <text class="tagline tagline-text" x="450" y="148" text-anchor="middle" font-family="'Courier New',monospace" font-size="15" letter-spacing="1.5">
     building useful systems out of rough ideas
   </text>
 
   <!-- LINE 3 -->
-  <text class="line3" x="310" y="205" fill="#ccc" font-family="'Courier New',monospace" font-size="16">
-    <tspan fill="#555">&gt; </tspan><tspan class="char">a</tspan><tspan class="char">g</tspan><tspan class="char">e</tspan><tspan class="char">n</tspan><tspan class="char">t</tspan><tspan class="char">&#160;</tspan><tspan class="char">m</tspan><tspan class="char">o</tspan><tspan class="char">d</tspan><tspan class="char">e</tspan><tspan class="char">:</tspan><tspan class="char">&#160;</tspan><tspan class="char">b</tspan><tspan class="char">u</tspan><tspan class="char">i</tspan><tspan class="char">l</tspan><tspan class="char">d</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">t</tspan><tspan class="char">e</tspan><tspan class="char">s</tspan><tspan class="char">t</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">i</tspan><tspan class="char">m</tspan><tspan class="char">p</tspan><tspan class="char">r</tspan><tspan class="char">o</tspan><tspan class="char">v</tspan><tspan class="char">e</tspan>
+  <text class="line3 line3-text" x="310" y="205" font-family="'Courier New',monospace" font-size="16">
+    <tspan class="line3-prompt">&gt; </tspan><tspan class="char">a</tspan><tspan class="char">g</tspan><tspan class="char">e</tspan><tspan class="char">n</tspan><tspan class="char">t</tspan><tspan class="char">&#160;</tspan><tspan class="char">m</tspan><tspan class="char">o</tspan><tspan class="char">d</tspan><tspan class="char">e</tspan><tspan class="char">:</tspan><tspan class="char">&#160;</tspan><tspan class="char">b</tspan><tspan class="char">u</tspan><tspan class="char">i</tspan><tspan class="char">l</tspan><tspan class="char">d</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">t</tspan><tspan class="char">e</tspan><tspan class="char">s</tspan><tspan class="char">t</tspan><tspan class="char">,</tspan><tspan class="char">&#160;</tspan><tspan class="char">i</tspan><tspan class="char">m</tspan><tspan class="char">p</tspan><tspan class="char">r</tspan><tspan class="char">o</tspan><tspan class="char">v</tspan><tspan class="char">e</tspan>
   </text>
 
   <!-- LINE 4 -->
-  <text class="line4" x="310" y="240" fill="#555" font-family="'Courier New',monospace" font-size="14">
-    <tspan fill="#333">&gt; </tspan><tspan class="char">s</tspan><tspan class="char">t</tspan><tspan class="char">a</tspan><tspan class="char">t</tspan><tspan class="char">u</tspan><tspan class="char">s</tspan><tspan class="char">:</tspan><tspan class="char">&#160;</tspan><tspan class="char">c</tspan><tspan class="char">u</tspan><tspan class="char">r</tspan><tspan class="char">r</tspan><tspan class="char">e</tspan><tspan class="char">n</tspan><tspan class="char">t</tspan><tspan class="char">l</tspan><tspan class="char">y</tspan><tspan class="char">&#160;</tspan><tspan class="char">b</tspan><tspan class="char">r</tspan><tspan class="char">e</tspan><tspan class="char">w</tspan><tspan class="char">i</tspan><tspan class="char">n</tspan><tspan class="char">g</tspan><tspan class="char">.</tspan><tspan class="char">.</tspan><tspan class="char">.</tspan><tspan class="char">&#160;</tspan>
+  <text class="line4 line4-text" x="310" y="240" font-family="'Courier New',monospace" font-size="14">
+    <tspan class="line4-prompt">&gt; </tspan><tspan class="char">s</tspan><tspan class="char">t</tspan><tspan class="char">a</tspan><tspan class="char">t</tspan><tspan class="char">u</tspan><tspan class="char">s</tspan><tspan class="char">:</tspan><tspan class="char">&#160;</tspan><tspan class="char">c</tspan><tspan class="char">u</tspan><tspan class="char">r</tspan><tspan class="char">r</tspan><tspan class="char">e</tspan><tspan class="char">n</tspan><tspan class="char">t</tspan><tspan class="char">l</tspan><tspan class="char">y</tspan><tspan class="char">&#160;</tspan><tspan class="char">b</tspan><tspan class="char">r</tspan><tspan class="char">e</tspan><tspan class="char">w</tspan><tspan class="char">i</tspan><tspan class="char">n</tspan><tspan class="char">g</tspan><tspan class="char">.</tspan><tspan class="char">.</tspan><tspan class="char">.</tspan><tspan class="char">&#160;</tspan>
   </text>
 
   <!-- Final blinking cursor -->
-  <rect class="cursor-final" x="580" y="228" width="2" height="16" fill="#555"/>
+  <rect class="cursor-final cursor-fill" x="580" y="228" width="2" height="16"/>
 
   <!-- Bottom accent line -->
-  <rect class="accent-line" x="330" y="275" width="240" height="1.5" fill="#fff" opacity="0.25"/>
+  <rect class="accent-line accent-fill" x="330" y="275" width="240" height="1.5" opacity="0.25"/>
 </svg>
