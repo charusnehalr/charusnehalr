@@ -27,27 +27,30 @@
     .dot13 { animation: float1 4.4s ease-in-out infinite, pulse1 4.4s ease-in-out infinite; }
     .dot14 { animation: float2 3.9s ease-in-out infinite, pulse2 3.9s ease-in-out infinite; }
 
-    /* ===== LIGHT MODE (default) ===== */
-    .bg-fill { fill: #f6f6f6; }
-    .grid-line { stroke: #e0e0e0; }
-    .title-text { fill: #111111; }
-    .tagline-text { fill: #666666; }
-    .line3-text { fill: #333333; }
-    .line3-prompt { fill: #aaaaaa; }
-    .line4-text { fill: #888888; }
-    .line4-prompt { fill: #bbbbbb; }
-    .cursor-fill { fill: #888888; }
-    .accent-fill { fill: #111111; }
-    .connect-line { stroke: currentColor; opacity: 0.06; }
+    /* ===== LIGHT MODE (user sees white page → show DARK banner) ===== */
+    .bg-fill { fill: #0d0d0d; }
+    .grid-line { stroke: #1a1a1a; }
+    .title-text { fill: #ffffff; }
+    .tagline-text { fill: #888888; }
+    .line3-text { fill: #cccccc; }
+    .line3-prompt { fill: #555555; }
+    .line4-text { fill: #555555; }
+    .line4-prompt { fill: #333333; }
+    .cursor-fill { fill: #555555; }
+    .accent-fill { fill: #ffffff; }
 
-    /* ===== DARK MODE ===== */
+    /* ===== DARK MODE (user sees dark page → show LIGHT banner) ===== */
     @media (prefers-color-scheme: dark) {
-      .bg-fill { fill: #0d1117; }
-      .grid-line { stroke: #1a1a1a; }
-      .title-text { fill: #ffffff; }
-      .tagline-text { fill: #888888; }
-      .line3-text { fill: #cccccc; }
-      .line3-prompt { fill: #555555; }
+      .bg-fill { fill: #f6f6f6; }
+      .grid-line { stroke: #e0e0e0; }
+      .title-text { fill: #111111; }
+      .tagline-text { fill: #666666; }
+      .line3-text { fill: #333333; }
+      .line3-prompt { fill: #aaaaaa; }
+      .line4-text { fill: #888888; }
+      .line4-prompt { fill: #bbbbbb; }
+      .cursor-fill { fill: #888888; }
+      .accent-fill { fill: #111111; }
       .line4-text { fill: #555555; }
       .line4-prompt { fill: #333333; }
       .cursor-fill { fill: #555555; }
