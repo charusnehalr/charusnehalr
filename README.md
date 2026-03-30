@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="./agent-banner.svg" alt="Charu Sneha" width="900"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./agent-banner-light.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="./agent-banner-dark.svg"/>
+    <img src="./agent-banner-dark.svg" alt="Charu Sneha" width="900"/>
+  </picture>
 </p>
 
 I build systems that turn rough ideas into things that actually work - mostly at the intersection of **NLP, search, and full-stack engineering**.
