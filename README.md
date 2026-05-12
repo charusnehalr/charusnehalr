@@ -100,3 +100,14 @@ Active in open-source contributions and hackathons
 <p align="center">
   <i>Still learning. Still building. Always shipping.</i>
 </p>
+
+
+### 📈 GitHub
+
+<div align="center">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=charusnehalr&show_icons=true&theme=tokyonight&border_radius=10&hide_border=true" alt="GitHub Stats" />
+  <br/>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=charusnehalr&layout=compact&theme=tokyonight&border_radius=10&hide_border=true" alt="Top Languages" />
+  <br/>
+  <img src="https://streak-stats.demolab.com/?user=charusnehalr&theme=tokyonight&hide_border=true&v=2" alt="GitHub Streak" />
+</div>
