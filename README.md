@@ -106,5 +106,4 @@ Active in open-source contributions and hackathons
 
 <div align="center">
 <img src="https://github-readme-streak-stats-eight.vercel.app/?user=charusnehalr&theme=tokyonight&hide_border=true&v=2" alt="GitHub Streak" />
-<img src="https://git-streak-stats.vercel.app/?user=charusnehalr&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
