@@ -105,12 +105,6 @@ Active in open-source contributions and hackathons
 ### 📈 GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=charusnehalr&show_icons=true&theme=tokyonight&border_radius=10&hide_border=true" alt="GitHub Stats" />
-  <br/>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=charusnehalr&layout=compact&theme=tokyonight&border_radius=10&hide_border=true" alt="Top Languages" />
-  <br/>
-  <img src="https://streak-stats.demolab.com/?user=charusnehalr&theme=tokyonight&hide_border=true&v=2" alt="GitHub Streak" />
-</div>
-
 <img src="https://github-readme-streak-stats-eight.vercel.app/?user=charusnehalr&theme=tokyonight&hide_border=true&v=2" alt="GitHub Streak" />
 <img src="https://git-streak-stats.vercel.app/?user=charusnehalr&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</div>
